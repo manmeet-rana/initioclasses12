@@ -1,0 +1,223 @@
+doctype html
+html(lang='en')
+  head
+    title Simple Company Website
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    link(rel='stylesheet prefetch', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    script(src='https://maps.googleapis.com/maps/api/js')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='/style.css')
+  body#myPage(data-spy='scroll', data-target='.navbar', data-offset='60')
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(style='font-family:verdana;', href='#') INITIO
+        #myNavbar.collapse.navbar-collapse
+          ul#myNavbar.nav.navbar-nav.navbar-right
+            li
+              a(href='#about') ABOUT
+            li
+              a(href='#courses') COURSES
+            li
+              a(href='#services') SERVICES
+            li
+              a(href='#resources') RESOURSES
+            li
+              a(href='#toppers-speak') TOPPER'S SPEAK
+            li
+              a(href='#contact') CONTACT US
+    // This Jumbotron is used to display the Company name and description
+    .jumbotron.text-center
+      h1 INITIO
+      p We specialize in 
+      form.form-inline
+        input.form-control(type='email', size='50', placeholder='Email Address')
+        button.btn.btn-success(type='button') Get Updates
+    // This container is used to display the About content
+    #about.container-fluid
+      .row
+        .col-sm-8
+          h2 About Company Page
+          h4
+            | Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          p
+            | Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          button.btn.btn-default.btn-lg Get in Touch
+        .col-sm-4.thumbnail
+          img#about-image(src='images/initio.jpeg', alt='logo', height='20', width='20')
+    // This container shows the Mission and vision statement
+    .container-fluid.bg-grey
+      .row
+        .col-sm-4
+          span.glyphicon.glyphicon-globe.logo
+        .col-sm-8
+          h2 Out Values
+          h4
+            strong MISSION:
+            |  Our mission Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          p
+            strong VISION:
+            |  Our vision Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+            |                       to make a type specimen book.
+    // This container is for courses offered
+    #courses.container-fluid.text-center
+      h2 Courses
+      h4 What we provide
+      .row.text-center
+        .col-sm-3
+          .thumbnail
+            img(src='http://si.wsj.net/public/resources/images/BN-HQ396_UPSHOT_J_20150329181353.jpg', alt='Luxury Car')
+            p
+              strong Luxury Car
+            p Yes, we build Awesome cars
+        .col-sm-3
+          .thumbnail
+            img(src='http://vrworld.com/wp-content/uploads/2014/11/Gaming-PC.jpg', alt='Custom Computer')
+            p
+              strong Gaming PC
+            p We build custom computers
+        .col-sm-3
+          .thumbnail
+            img(src='https://i2.cdn.turner.com/cnn/2013/images/07/10/3d.printing.jpg', alt='3D Printing')
+            p
+              strong 3D Printing
+            p We build custom 3D printers
+        .col-sm-3
+          .thumbnail
+            img(src='http://si.wsj.net/public/resources/images/BN-HQ396_UPSHOT_J_20150329181353.jpg', alt='Luxury Car')
+            p
+              strong Luxury Car
+            p Yes, we build Awesome cars
+    // This container showcases the Services offered
+    #services.container-fluid.text-center.bg-grey
+      h2 SERVICES
+      h4 What we offer
+      br
+      .row
+        .col-sm-4
+          span.glyphicon.glyphicon-off.logo-small
+          h4 RESULTS
+          p
+            | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+        .col-sm-4
+          span.glyphicon.glyphicon-heart.logo-small
+          h4 ENVIRONMENT
+          p
+            | Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+        .col-sm-4
+          span.glyphicon.glyphicon-lock.logo-small
+          h4 ONLINE SUPPORT
+          p
+            | Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+      br
+    // This container is to showcase the portfolio work and customer reviews
+    #resources.container-fluid.text-center
+      h2 Resources
+      h4 What we have created
+      .row.text-center
+        .col-sm-3
+          .thumbnail
+            a(href='https://www.google.co.in/')
+              img(src='http://si.wsj.net/public/resources/images/BN-HQ396_UPSHOT_J_20150329181353.jpg', alt='Luxury Car')
+            p
+              strong  IX Sample Papers
+        .col-sm-3
+          .thumbnail
+            a(href='https://www.google.co.in/')
+              img(src='http://vrworld.com/wp-content/uploads/2014/11/Gaming-PC.jpg', alt='Custom Computer')
+            p
+              strong Gaming PC
+            p We build custom computers
+        .col-sm-3
+          .thumbnail
+            a(href='https://www.google.co.in/')
+              img(src='https://i2.cdn.turner.com/cnn/2013/images/07/10/3d.printing.jpg', alt='3D Printing')
+            p
+              strong 3D Printing
+            p We build custom 3D printers
+        .col-sm-3
+          .thumbnail
+            a(href='https://www.google.co.in/')
+              img(src='http://si.wsj.net/public/resources/images/BN-HQ396_UPSHOT_J_20150329181353.jpg', alt='Luxury Car')
+            p
+              strong Luxury Car
+            p Yes, we build Awesome cars
+    // This container is for the toppers' feedbacks
+    #toppers-speak.container-fluid.bg-grey
+      .text-center
+        h2 What our customers say
+      #myCarousel.carousel.slide.text-center(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target='#myCarousel', data-slide-to='0')
+          li(data-target='#myCarousel', data-slide-to='1')
+          li(data-target='#myCarousel', data-slide-to='2')
+        // Wrapper for slides
+        .carousel-inner(role='listbox')
+          .item.active
+            h4
+              | "This is one of the best companies I've ever had the pleasure of doing businessDJF DF EIFJI FEFJFJF EUFH  SFHJ IFEJFK SFHJSF F with."
+              br
+              span(style='font-style:normal;') Thomas Ford, CEO, XYZ
+          .item
+            h4
+              | "One word.... Amazing!!"
+              br
+              span(style='font-style:normal;') Annie Smith, Saleswoman, DC Motors
+          .item
+            h4
+              | "This company takes pride in the work they do for clients, it is seen in the valuable work they deliver"
+              br
+              span(style='font-style:normal;') Steve Jobs, CEO, PINEAPPLE
+        // Left and Right controls
+        a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+          span.sr-only Previous
+        a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+          span.sr-only Next
+    // This Container is for the contact information
+    #contact.container-fluid
+      h2.text-center CONTACT
+      .row
+        .col-sm-5
+          p Contact us and we'll get back to you within 24 hours.
+          p
+            span.glyphicon.glyphicon-map-marker
+            |  Faridabad,Haryana
+          p
+            span.glyphicon.glyphicon-phone
+            |  +91 958200793, +91 9205023321
+          p
+            span.glyphicon.glyphicon-envelope
+            |  initioclasses@gmail.com
+        .col-sm-7
+          form(method='post', action='/contact/send')
+            .row
+              .col-sm-6.form-group
+                input#name.form-control(name='name', placeholder='Name', type='text', required='')
+              .col-sm-6.form-group
+                input#email.form-control(name='email', placeholder='Email', type='email', required='')
+            textarea#comments.form-control(name='Message', placeholder='Message', rows='5')
+            br
+            .row
+              .col-sm-12.form-group
+                button.btn.btn-default.pull-right(type='submit', value='submit') Send
+    // This div is used to set the height and width of the Map with CSS
+    // <div id="googleMap" style="height:400px;width:100%;"></div>
+    footer.container-fluid.text-center
+      a(href='#myPage', title='To Top')
+        span.glyphicon.glyphicon-chevron-up
+      p
+        strong Initio Classes
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
+    script(src='js/index.js')
