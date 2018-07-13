@@ -55,5 +55,9 @@ app.post('/contact/send', function(req, res){
 	});
 });
 
-app.listen(process.env.port || 3000);
-console.log('Server is running on port 3000...');
+app.set( 'port', ( process.env.PORT || 5000 ));
+
+// Start node server
+app.listen( app.get( 'port' ), function() {
+  console.log( 'Node server is running on port ' + app.get( 'port' ));
+  });
